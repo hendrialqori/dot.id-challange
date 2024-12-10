@@ -10,7 +10,10 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 export async function GET() {
     try {
         const { data } = await axios.get(`${CONST.API_URL}/province`)
-        return NextResponse.json({ data: data.rajaongkir.results }, { status: 200 })
+
+        const result = data?.rajaongkir?.results
+
+        return NextResponse.json({ data: result }, { status: 200 })
 
     } catch (error) {
         if (axios.isAxiosError(error)) {
