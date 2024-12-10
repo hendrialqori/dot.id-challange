@@ -1,0 +1,26 @@
+$rounded: .4rem;
+$text-base: 0.9rem;
+
+.select {
+    width: 100%;
+    border-radius: $rounded;
+    padding-inline: 0.7rem;
+    padding-block: 0.5rem;
+    font-size: $text-base;
+    font-weight: 400;
+    border: none;
+    background: rgb(239, 239, 239);
+
+    &:focus {
+        outline: 2px solid black;
+    }
+
+    &:invalid {
+        outline: 2px solid red;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 70%;
+    }
+}

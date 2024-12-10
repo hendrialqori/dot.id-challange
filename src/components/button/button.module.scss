@@ -1,0 +1,50 @@
+$text-base: 0.9rem;
+$text-color: #ffffff;
+$background: #000000;
+
+.button {
+    font-weight: 500;
+    font-size: $text-base;
+    background-color: $background;
+    border-radius: 0.4rem;
+    color: $text-color;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    cursor: pointer;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.3rem;
+
+    svg {
+        font-size: 1.2rem;
+        animation: spin 1s linear infinite;
+    }
+
+    &:hover {
+        outline: 2px solid $background;
+    }
+
+    &:active {
+        outline: none;
+    }
+
+    &:disabled {
+        background-color: #000000;
+        opacity: 90%;
+        cursor: not-allowed;
+        outline: 2px solid $background;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

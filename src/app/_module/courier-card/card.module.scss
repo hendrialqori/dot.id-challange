@@ -1,0 +1,36 @@
+.card {
+    display: grid;
+    gap: 0.8rem;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 2rem;
+
+    .header {
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        p {
+            text-transform: capitalize;
+            font-size: 0.9rem;
+        }
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.85rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    }
+}

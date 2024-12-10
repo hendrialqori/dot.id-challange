@@ -1,0 +1,27 @@
+$rounded: .4rem;
+$text-base: 0.9rem;
+
+.input {
+    width: 100%;
+    border-radius: $rounded;
+    padding-inline: 0.7rem;
+    padding-block: 0.5rem;
+    font-size: $text-base;
+    font-weight: 500;
+    border: none;
+    background: rgb(239, 239, 239);
+    text
+
+    &:focus {
+        outline: 2px solid black;
+    }
+
+    &:invalid {
+        outline: 2px solid red;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 70%;
+    }
+}
