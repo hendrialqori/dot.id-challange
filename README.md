@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DOT Indonesia Front-end Challange
 
-## Getting Started
+ini adalah **take home test** dari PT Digdaya Olah Teknologi Indonesia untuk untuk Front-end Developer.
 
-First, run the development server:
+## Cerita
+Aplikasi ini berfungsi untuk mengecek / tracking harga sebuat jasa pengiriman barang antar kota/provinsi dengan expedisi yang sudah terkenal di seluruh indonesia (JNE, TIKI, POS),
+menggunakan API dari **raja ongkir** memudahkan proses development dengan dokumentasi yang lengkap.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Bagaimana cara install aplikasi ini di lokal komputer ?
+1. Buka link github repositori ini [https://github.com/hendrialqori/dot.id-challange](https://github.com/hendrialqori/dot.id-challange)
+2. Lakukan cloning seperti langkah dibawah ini :
+```.bash
+git clone https://github.com/hendrialqori/dot.id-challange.git
+```
+atau menggunakan ssh :
+```.bash
+ git clone git@github.com:hendrialqori/dot.id-challange.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Jika proses cloning berhasil masuk ke directory dot.id-challange, dengan cara :
+```.bash
+cd dot.id-challange 
+```
+4. Step selanjut nya install semua dependency yang terdapat pada file package.json
+```.bash
+npm install
+```
+5. Jika proses sudah selesai, jalakan aplikasi dengan perintah :
+```.bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variable
+```.env
+NEXT_PUBLIC_API_KEY="acf834ba07d71b794bed2e03f5ab94bb"
+NEXT_PUBLIC_API_URL="https://api.rajaongkir.com/starter"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Happy coding :)
