@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { NextResponse } from "next/server"
 import axios from "axios"
 import * as CONST from "#/constant"
@@ -8,11 +10,6 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 export async function GET() {
     try {
         const { data } = await axios.get(`${CONST.API_URL}/province`)
-
-        if (data) {
-            return NextResponse.json({ data: [] }, { status: 200 })
-        }
-
         return NextResponse.json({ data: data.rajaongkir.results }, { status: 200 })
 
     } catch (error) {
